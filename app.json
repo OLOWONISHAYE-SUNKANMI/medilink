@@ -14,7 +14,10 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.medilink.app"
+      "bundleIdentifier": "com.medilink.app",
+      "infoPlist": {
+        "NSFaceIDUsageDescription": "MediLink uses Face ID to securely authenticate your identity."
+      }
     },
     "android": {
       "package": "com.medilink.app",
@@ -23,7 +26,8 @@
         "backgroundColor": "#0C0F1E"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "permissions": ["USE_BIOMETRIC", "USE_FINGERPRINT"]
     },
     "web": {
       "favicon": "./assets/favicon.png"
